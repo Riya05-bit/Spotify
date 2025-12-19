@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    background: rgb(0, 0, 0);
+}
+
+nav:hover{
+    background-color:#282828;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+#logo {
+    padding: 1vw 0;
+    cursor: pointer;
+}
+
+.Headtxt {
+    padding: 2vw 2vw 1vw 2vw;
+}
+
+.search {
+    width: 35vw;
+    height: 2vw;
+    border-radius: 50px;
+    padding: 0.5vw;
+    cursor: text;
+}
+
+.searchBox {
+  position: relative;
+  display: inline-block;
+}
+
+.clear {
+  position: absolute;
+  right: 37vw;
+  top: 5%;
+  cursor: pointer;
+  display: none;
+  color: #5f575d;
+}
+
+.btn {
+    background-color: #1ED760;
+    color: #000;
+    border-radius: 2vw;
+    padding: 0.5vw;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #282828;
+    color: #1ED760;
+    border: 2px solid #1DB954;
+}
+
+.container {
+    background-color: #535353;
+    display: flex;
+    justify-content: space-around;
+    padding: 1vw;
+}
+
+#box1 {
+    height: 50vw;
+    width: 25vw;
+    border-radius: 50px;
+    padding: 1.5vw;
+    border: 9px solid;
+    position: relative;
+    background: #1DB954;
+}
+
+.top {
+    background: #000;
+    border: none;
+    border-radius: 0 0 8px 8px;
+    width: 9vw;
+    height: 1vw;
+    position: absolute;
+    top: 0;
+    left: 32%;
+}
+
+.musicList li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.songLine {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    padding: 0.2vw;
+}
+
+.songLine img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#box2 {
+  width: 40vw;     
+  height: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: RotateAnime 5s infinite linear;
+  transform-origin: center;
+  animation-play-state: paused;
+}
+
+@keyframes RotateAnime {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#box2 .box2-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box2 .box2-image img {
+    width: 90%;
+    border-radius: 50%;
+}
+
+.btns {
+    background-color:  #000;
+    color: white;
+    display: flex;
+    gap: 3vw;
+    justify-content: center;
+    font-size: 2vw;
+    cursor: pointer;
+    padding: 2vw 0;
+}
+
+.btns:hover{
+    background-color:#282828;
+    color: #d4ded8;
+}
+#selectedSong {
+     font-weight: 700;
+     text-align: center;
+}
+
+

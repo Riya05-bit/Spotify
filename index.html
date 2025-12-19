@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon"
+        href="https://cdn.pixabay.com/photo/2016/10/22/00/15/spotify-1759471_1280.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <a href="Index.html"><li><img src="Images/logo.png" id="logo" width="75" alt="Spotify logo"></li></a>
+
+            <li class="Headtxt">
+                <input class="search" type="text" placeholder="Search song" id="searchInput">
+                <span id="clearBtn" class="clear">✖</span>
+                <button class="btn" id="searchBtn">search</button>
+            </li>
+
+            <a href="Login.html" target="_blank"><li class="Headtxt"><button class="btn">Login</button></li></a>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <!-- LEFT BOX -->
+        <div id="box1">
+
+            <button class="top"></button>
+
+            <p id="noResult" style="display:none; text-align:center; margin-top:10px;">No results found</p>
+
+            <h2 id="selectedSong" style="padding:5px 0; min-height:40px;"></h2>
+
+            <div class="musicList">
+                <ul>
+                    <li class="songLine" data-audio="Songs/1.mp3">
+                        <img src="https://c.saavncdn.com/245/Hass-Hass-English-2023-20231026170517-500x500.jpg" width="50">
+                        <span>Hass Hass - Diljit Dosanjh</span>
+                    </li>
+                    <li class="songLine" data-audio="Songs/2.mp3">
+                        <img src="https://images.unsplash.com/photo-1515010137531-66995c7f40e6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c29uZ3xlbnwwfHwwfHx8MA%3D%3D" width="50">
+                        <span>Greedy — Tate McRae</span>
+                    </li>
+                    <li class="songLine" data-audio="Songs/3.mp3">
+                        <img src="https://images.unsplash.com/photo-1635319520353-194ef0284701?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dmFtcGlyZXxlbnwwfHwwfHx8MA%3D%3D " width="50">
+                        <span>Vampire — Dominic Fike</span>
+                    </li>
+                    <li class="songLine" data-audio="Songs/4.mp3">
+                        <img src="https://plus.unsplash.com/premium_photo-1670148434532-5d4f1d183060?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fHdhdGVyfGVufDB8fDB8fHww " width="50">
+                        <span>Water — Tyla</span>
+                    </li>
+                    <li class="songLine" data-audio="Songs/5.mp3">
+                        <img src="https://images.unsplash.com/photo-1651041610954-4f7ba3bd16c2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fEJ0c3xlbnwwfHwwfHx8MA%3D%3D " width="50">
+                        <span>Too Much — JK</span>
+                    </li>
+                    <li class="songLine" data-audio="Songs/6.mp3">
+                        <img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNvbG9yfGVufDB8fDB8fHww " width="50">
+                        <span>Heavy Hitters — Wiz Khalifa</span>
+                    </li>
+                    <li class="songLine" data-audio="Songs/7.mp3">
+                        <img src="https://images.unsplash.com/photo-1546957236-5fde4e0b25eb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bmVlZGxlfGVufDB8fDB8fHww" width="50">
+                        <span>Needle — Nicki Mina</span>
+                    </li>
+                    <li class="songLine" data-audio="Songs/8.mp3">
+                        <img src="https://images.unsplash.com/photo-1550340499-a6c60fc8287c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGFyaXN8ZW58MHx8MHx8fDA%3D" width="50">
+                        <span>Paris — The Chainsmokers</span>
+                    </li>
+                    <li class="songLine" data-audio="Songs/9.mp3">
+                        <img src="https://media.istockphoto.com/id/1165346702/photo/colorful-line.webp?a=1&b=1&s=612x612&w=0&k=20&c=4sRG1cO_eXZIbkanbZEq6yuekvehaxupMtSAZ2esA4Y=" width="50">
+                        <span>Over Mind 2 — Alan Walker</span>
+                    </li>
+                    <li class="songLine" data-audio="Songs/10.mp3">
+                        <img src="https://images.unsplash.com/photo-1675652158039-2a0042216593?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29sbG9yZnVsbHxlbnwwfHwwfHx8MA%3D%3D " width="50">
+                        <span>Don't Need — Jaief, Asong</span>
+                    </li>
+                    <li class="songLine" data-audio="Songs/11.mp3">
+                        <img src="https://images.unsplash.com/photo-1734034873537-6a75e0f7aa13?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGJhcmJpZXxlbnwwfHwwfHx8MA%3D%3D" width="50">
+                        <span>Barbie World — Aqua</span>
+                    </li>
+                    <li class="songLine" data-audio="Songs/12.mp3">
+                        <img src="https://images.unsplash.com/photo-1613539246066-78db6ec4ff0f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Zmxvd2Vyc3xlbnwwfHwwfHx8MA%3D%3D" width="50">
+                        <span>Flowers — Girls' Generation</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- RIGHT BOX -->
+        <div id="box2">
+            <div class="box2-image">
+                <img src="https://images.unsplash.com/photo-1585574195743-c19b5f659514?q=80&w=880">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- AUDIO PLAYER -->  
+    <audio id="audioPlayer" controls style=" width:100%; margin:10px 0;"></audio>
+
+    <div class="btns">
+    <div id="prevBtn"><i class="fa-solid fa-backward"></i></div>
+    <div id="playPauseBtn"><i class="fa-solid fa-play"></i></div>
+    <div id="nextBtn"><i class="fa-solid fa-forward"></i></div>
+</div>
+
+    <script src="https://kit.fontawesome.com/0f8fa46d39.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
